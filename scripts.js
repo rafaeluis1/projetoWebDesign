@@ -4,17 +4,47 @@ $(document).ready(function () {
         $(".btn").removeClass("active");
         $(this).addClass("active");
 
-        $(".card-deck").hide();
-        $(".container").hide();
 
-        if (attr == "suplementacao") {
-            $("." + attr).show();
+
+
+
+        if (attr != "carrinho-button") {
+
+            $(".card-deck").hide();
+            $(".spacingcontainer").hide();
+            if (attr == "suplementacao") {
+                $("." + attr).show();
+            }
+            else if (attr == "modafitness") {
+                $("." + attr).show();
+
+            }
+            else if (attr == "acessorio") {
+                $("." + attr).show();
+
+            }
+            else if (attr == "promocao") {
+                $("." + attr).show();
+
+            }
         }
-        else if (attr == "modafitness") {
-            $("." + attr).show();
+    });
+
+    $(".nav-link").click(function () {
+        var attr = $(this).attr("id");
+        $(".nav-link").removeClass("active");
+        $(this).addClass("active");
+
+        if (attr == "catalogo") {
+            $(".card-deck").show();
+            $(".spacingcontainer").show();
         }
+
+
+
 
     })
+
 
 
 });

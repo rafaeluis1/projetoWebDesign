@@ -16,6 +16,7 @@
   <body>
   <div id = "cabecalho">
         <div class="cabecalho">
+
             <h1 class="text-left text-white pt-5">Super Supply</h1>
             <button class="btn" id="carrinho-button"><i class="fas fa-cart-arrow-down pull-right"></i></button>
         </div>
@@ -23,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                    <a class="nav-link h3" href="#buttonbox">Catálogo</a>
+                    <a class="nav-link h3 active" href="#buttonbox" id="catalogo">Catálogo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link h3" href="#">Mais Vendidos</a>
+                    <a class="nav-link h3" href="#buttonbox">Promoções</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link h3" href="#">Lançamentos</a>
@@ -48,13 +49,16 @@
       </ol>
       <div class="carousel-inner embed-responsive embed-responsive-21by9">
         <!-- Carousel items have `.embed-responsive-item` -->
-        <div class="carousel-item embed-responsive-item active " style="background-image:url('http://via.placeholder.com/1920x700')" alt="Primeiro Slide">
+        <div class="carousel-item embed-responsive-item active " alt="Primeiro Slide">
+          <img src="images/anuncios/festival-de-promocoes.png" alt="festival-promocoes" style="height: 100%; width: 100%;">
       </div>
         
-        <div class="carousel-item embed-responsive-item" style="background-image:url('http://via.placeholder.com/1925x700')" alt="Segundo Slide">
+        <div class="carousel-item embed-responsive-item" alt="Segundo Slide">
+          <img src="images/anuncios/promo.png" alt="promocao-halteres" style="height: 100%; width: 100%;">
         </div>
 
-        <div class="carousel-item embed-responsive-item" style="background-image:url('http://via.placeholder.com/1923x700')" alt="Terceiro Slide">
+        <div class="carousel-item embed-responsive-item" alt="Terceiro Slide">
+          <img src="images/anuncios/roupafit.png" alt="promocao-fitness" style="height: 100%; width: 100%;">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
@@ -67,22 +71,19 @@
     </a>
     </div>
     
-    <div class="container" id= "#spacing"></div>
+    <div class="container" id= "spacing"></div>
+
     <div class="row">
       <div class="btn-toolbar-lg mx-auto" id="buttonbox">
         <div class="btn-group" role="group" aria-label="Suplementação">
-          <button type="button" id="suplementacao" class="btn btn-secondary btn-image active" style="  background-image: url('http://via.placeholder.com/1920x700') !important;
-          background-size: contain;">Suplementação</button>
+          <button type="button" id="suplementacao" class="btn btn-secondary btn-image active">Suplementação</button>
         </div>
         <div class="btn-group" role="group" aria-label="Moda Fitness">
-          <button type="button" id="modafitness" class="btn btn-secondary btn-image" style="  background-image: url('http://via.placeholder.com/1920x700') !important;
-          background-size: contain;">Moda Fitness</button>
+          <button type="button" id="modafitness" class="btn btn-secondary btn-image">Moda Fitness</button>
         </div><div class="btn-group" role="group" aria-label="Acessórios Musculação">
-          <button type="button" id="acessorio" class="btn btn-secondary btn-image" style="  background-image: url('http://via.placeholder.com/1920x700') !important;
-          background-size: contain;">Acessórios Musculação</button>
+          <button type="button" id="acessorio" class="btn btn-secondary btn-image">Acessórios Musculação</button>
         </div><div class="btn-group" role="group" aria-label="Mais Vendidos">
-          <button type="button" id="maisvendidos" class="btn btn-secondary btn-image" style="  background-image: url('http://via.placeholder.com/1920x700') !important;
-          background-size: contain;">Mais Vendidos</button>
+          <button type="button" id="promocao" class="btn btn-secondary btn-image">Promoções</button>
         </div>
       </div>
     </div>
@@ -93,71 +94,149 @@
         <div class="card">
           <img src="images/products/wheyIntegralmedica.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Nutri Whey Protein - Baunilha - Pote 907g</h5>
+            <p class="card-text" id="cardtext1">R$ 51,00</p>
           </div>
         </div>
         <div class="card">
           <img src="images/products/creatinaIntegralMedica.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Creatina</h5>
+            <p class="card-text" id="cardtext1">R$ 38,00</p>
           </div>
         </div>
         <div class="card">
           <img src="images/products/kitcreatinaglutamina.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Kit Creatina e Glutamina</h5>
+            <p class="card-text" id="cardtext1">R$ 93,00</p>
           </div>
         
         </div>
         <div class="card">
           <img src="images/products/polivitaminicogrow.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Multivitaminico Growth</h5>
+            <p class="card-text" id="cardtext1">R$ 44,90</p>
           </div>
         
         </div>
       </div>
 
-      <div class="container" id= "spacingcontainer" style="height: 100px; width: 200px;"></div>
+      <div class="container spacingcontainer"  style="height: 100px; width: 200px;"></div>
 
     <div class="row-lg" id="backcolor">
       <div class="card-deck modafitness mx-auto" id="card-deck">
         
         <div class="card">
-          <img src="images/products/creatinaIntegralMedica.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+          <img src="images/products/camisetaAnimal.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Camiseta Animal</h5>
+            <p class="card-text" id="cardtext1">R$ 53,00</p>
           </div>
         </div>
         <div class="card">
-          <img src="images/products/creatinaIntegralMedica.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;"> 
+          <img src="images/products/conjunto.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;"> 
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Conjunto Lilas Academic</h5>
+            <p class="card-text" id="cardtext1">R$ 110,00</p>
           </div>
         </div>
         <div class="card">
-          <img src="images/products/creatinaIntegralMedica.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+          <img src="images/products/tenis1.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Tenis Adidas</h5>
+            <p class="card-text" id="cardtext1">R% 150,00</p>
           </div>
         
         </div>
         <div class="card">
-          <img src="images/products/creatinaIntegralMedica.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+          <img src="images/products/luvas.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
           <div class="card-body" id="cardbody1">
-            <h5 class="card-title" id="cardtitle1">Card 1</h5>
-            <p class="card-text" id="cardtext1">Card text 1</p>
+            <h5 class="card-title" id="cardtitle1">Luvas de Treino</h5>
+            <p class="card-text" id="cardtext1">R$ 45,00</p>
           </div>
         
         </div>
       </div>
+
+      <div class="container spacingcontainer"  style="height: 100px; width: 200px;"></div>
+
+      <div class="row-lg" id="backcolor">
+        <div class="card-deck acessorio mx-auto" id="card-deck">
+          
+          <div class="card">
+            <img src="images/products/extensor.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+            <div class="card-body" id="cardbody1">
+              <h5 class="card-title" id="cardtitle1">Kit Extensora</h5>
+              <p class="card-text" id="cardtext1">R$ 159,90</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/products/anilha.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;"> 
+            <div class="card-body" id="cardbody1">
+              <h5 class="card-title" id="cardtitle1">Anilhas Vazadas para Halteres</h5>
+              <p class="card-text" id="cardtext1">R$ 138,00</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/products/apoioflexaodebraco.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+            <div class="card-body" id="cardbody1">
+              <h5 class="card-title" id="cardtitle1">Suporte P/ Flexão de Treino</h5>
+              <p class="card-text" id="cardtext1">R$ 39,00</p>
+            </div>
+          
+          </div>
+          <div class="card">
+            <img src="images/products/cinta.jpg" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+            <div class="card-body" id="cardbody1">
+              <h5 class="card-title" id="cardtitle1">Cinta Suporte para Musculação - Everlast</h5>
+              <p class="card-text" id="cardtext1">R$ 115,00</p>
+            </div>
+          
+          </div>
+        </div>
+
+        <div class="container spacingcontainer"  style="height: 100px; width: 200px;"></div>
+        
+        <div class="row-lg" id="backcolor">
+          <div class="card-deck promocao mx-auto" id="card-deck promo">
+            
+            <div class="card">
+              <img src="images/products/promo-haltekettlebell.png" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+              <div class="card-body" id="cardbody1">
+                <h5 class="card-title" id="cardtitle1">Halter Kettlebell</h5>
+                <del class="card-text">R$ 50,00</del>
+                <p class="card-text" id="cardtext1">R$ 37,00</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/products/promo-kit.png" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;"> 
+              <div class="card-body" id="cardbody1">
+                <h5 class="card-title" id="cardtitle1">Kit Suplementos</h5>
+                <del class="card-text">R$ 229,00</del>
+                <p class="card-text" id="cardtext1">R$ 200,00</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/products/promo-roupafitnessmulher.png" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+              <div class="card-body" id="cardbody1">
+                <h5 class="card-title" id="cardtitle1">Conjunto Fitness - Black Piano</h5>
+                <del class="card-text">R$ 50,00</del>
+                <p class="card-text" id="cardtext1">R$ 37,00</p>
+              </div>
+            
+            </div>
+            <div class="card">
+              <img src="images/products/promo-roupafitnesse.png" alt="dummy" class="card-img-top" style="width: 250px; height: 250px;">
+              <div class="card-body" id="cardbody1">
+                <h5 class="card-title" id="cardtitle1">Calça Premium Fitness - Masculina</h5>
+                <del class="card-text">R$ 30,00</del>
+                <p class="card-text" id="cardtext1">R$ 15,90</p>
+              </div>
+            
+            </div>
+          </div>
         
     
     
